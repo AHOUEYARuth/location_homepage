@@ -66,7 +66,7 @@ button {
   background-color: #e93740;
   color: #ffffff;
   padding: 7px 15px;
-  border-radius: 15px;
+  border-radius: 20px;
   border: none;
 }
 .banner {
@@ -99,6 +99,13 @@ p {
 .buttons {
   gap: 20px;
   display: flex;
+}
+#place {
+  background-color: #e93740;
+  color: #fff;
+}
+.bout button {
+  width: 95px;
 }
 .btn_white {
   background-color: #ffffff;
@@ -329,15 +336,7 @@ form img {
   bottom: 20px;
   left: 20px;
 }
-.stroke {
-  width: 100%;
-  height: 100px;
-  background-color: #00000017;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  position: absolute;
-  bottom: 4px;
-}
+
 .img2 {
   width: 240px;
 }
@@ -403,7 +402,6 @@ form img {
   gap: 10px;
 }
 #footer {
-  /* padding-top: 40px; */
   background-color: #f4f4f4;
 }
 .head {
@@ -485,6 +483,9 @@ form img {
   display: none;
   cursor: pointer;
 }
+.mo_search {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
@@ -505,34 +506,190 @@ form img {
     flex-wrap: wrap;
   }
 }
-/* @media screen and (max-width: 375px) {
-    #header{
-        width: 100%;
-    }
-    .container{
-        max-width: 90%;
-        margin: 0 auto;
-    }
-    .header_content #logo{
-        width: 20%;
-    }
-    nav{
-        display: none;
-    }
-    .connect ul li{
-        display: none;
-    }
-    #menu{
-        display: block;
-    }
-    .banner{
-        background-size: cover;
-    }
-    h1{
-        font-size: 40px;
-        text-align: center;
-    }
-    p{
-        font-size: 13px;
-    }
-} */
+@media screen and (max-width: 375px) {
+  #header {
+    width: 100%;
+  }
+  .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .header_content #logo {
+    width: 20%;
+  }
+  nav {
+    display: none;
+  }
+  .connect ul li {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .banner {
+    width: 100%;
+    background-image: url(images/mob.png);
+  }
+  .banner_content {
+    min-height: calc(100vh - 71px);
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  p {
+    font-size: 18px;
+  }
+  #place {
+    background-color: #e93740;
+    color: #fff;
+  }
+  .form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    gap: 20px;
+  }
+  .form form,
+  .map {
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .map_section {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    gap: 20px;
+  }
+  .localisation {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search {
+    display: none;
+  }
+  .mo_search {
+    display: flex;
+    padding: 14px;
+    width: 300px;
+    background-color: #e93740;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 25px;
+  }
+  .mo_search p {
+    color: #fff;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .categorie_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .categorie_list .item {
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  #listing {
+    overflow-x: hidden;
+  }
+  .listing_content .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .listing_content .buttons button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  #listing .listing_content .buttons .icon {
+    display: none;
+  }
+  #first {
+    background-color: #e93740;
+    color: #fff;
+  }
+  .blog_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog_tiem {
+    width: 300px;
+  }
+  .blog_tiem img {
+    width: 100%;
+  }
+  .about_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .about_text {
+    width: 100%;
+  }
+  .about_content .cards .card_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid_imd {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid,
+  .oth_item {
+    display: flex;
+    flex-direction: column;
+  }
+  .menage {
+    display: none;
+  }
+  .others {
+    width: 100%;
+  }
+  .oth_item img {
+    width: 100%;
+  }
+  .head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .end {
+    width: 100%;
+    height: 70px;
+  }
+  .end p {
+    width: 60%;
+    text-align: center;
+  }
+  .ft,
+  .ft form {
+    width: 100%;
+  }
+  .ft form input{
+    width: 75%;
+  }
+  .ft form button{
+    width: 80%;
+  }
+}

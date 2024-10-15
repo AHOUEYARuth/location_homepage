@@ -486,6 +486,26 @@ form img {
 .mo_search {
   display: none;
 }
+.mobile_menu{
+  width: 200px;
+  background-color:#e8e8e8;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  display: none;
+}
+.mobile_menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.close{
+  width: 100%;
+  text-align: end;
+  font-size: 25px;
+}
 @media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;

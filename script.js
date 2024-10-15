@@ -9,3 +9,13 @@ function displayProgressBar() {
   }
   
   window.addEventListener('scroll', displayProgressBar);
+
+  const menuBtn = document.getElementById('menu')
+  const mobileMenu = document.querySelector('.mobile_menu')
+  const closeBtn = document.querySelector('.close')
+  menuBtn.addEventListener('click', () =>{
+    mobileMenu.style.display = 'block'
+  })
+  closeBtn.addEventListener('click', () =>{
+    mobileMenu.style.display = 'none'
+  })

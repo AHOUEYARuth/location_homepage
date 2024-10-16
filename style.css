@@ -486,9 +486,9 @@ form img {
 .mo_search {
   display: none;
 }
-.mobile_menu{
+.mobile_menu {
   width: 200px;
-  background-color:#e8e8e8;
+  background-color: #e8e8e8;
   padding: 20px;
   border-radius: 5px;
   position: absolute;
@@ -496,15 +496,18 @@ form img {
   right: 10px;
   display: none;
 }
-.mobile_menu ul{
+.mobile_menu ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.close{
+.close {
   width: 100%;
   text-align: end;
   font-size: 25px;
+}
+.tab_model{
+  display: none;
 }
 @media screen and (max-width: 1024px) {
   body {
@@ -525,6 +528,114 @@ form img {
     gap: 20px;
     flex-wrap: wrap;
   }
+}
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  nav,
+  .connect ul li {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+
+  /* #footer {
+    display: none;
+  } */
+  .banner {
+    width: 100%;
+  }
+  .banner_content {
+    min-height: calc(100vh - 71px);
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .categorie_list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  #listing .buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  #first{
+    background-color: #e93740;
+    color: #fff;
+  }
+  .blog_list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .blog_tiem{
+    width: 300px;
+  }
+  .about_content{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .about_text{
+    text-align: center;
+  }
+  .card_item{
+    width: 200px;
+  }
+  .grid_imd{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .menage{
+    width: 90%;
+  }
+  .others{
+    width: 100%;
+  }
+  .oth_list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hide{
+    display: none;
+  } 
+  .tab_model{
+    display: flex;
+    gap: 20px;
+  }
+  .head {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
 }
 @media screen and (max-width: 375px) {
   #header {
@@ -706,10 +817,10 @@ form img {
   .ft form {
     width: 100%;
   }
-  .ft form input{
+  .ft form input {
     width: 75%;
   }
-  .ft form button{
+  .ft form button {
     width: 80%;
   }
 }
